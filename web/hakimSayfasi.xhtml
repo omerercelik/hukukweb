@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:h="http://java.sun.com/jsf/html"
+       xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+    
+    <title>Hakim girişi</title>
+  
+      <link href="reset.css" rel="stylesheet" type="text/css" />
+     <link href="grid.css" rel="stylesheet" type="text/css" />
+         <link href="style.css" rel="stylesheet" type="text/css" />	  
+
+		
+	</h:head>
+	<h:body style="back" id="page_avukatGirişi">
+		<div class="extra">
+<!--====================s==========header=================================-->
+			<header >
+				<div class="main">
+                                    <div  style= "background-image: url(#{resource['images:logo.png']});background-size: cover" >
+					<div class="border-top">
+						<div class="wrapper">
+                                                    
+                                                    
+							<h1><a href="index.html">HUKUK</a></h1>
+							<nav> <h:form>
+						<ul  class="menu">
+                                                                    <li class="anasayfabutton">
+                                                                       
+                                                                        <h:commandLink style="color:white; font-size:20px;" value="Anasayfa" action="index"/>
+                                                                        
+                                                                        </li>
+                                                                    <li class="anasayfabutton"><h:commandLink style="color:white ; font-size:20px;" value="Avukatlarımız" action="Avukatlar" />
+                                                                        
+                                                                        </li>
+                                                            <li class="anasayfabutton"><h:commandLink style=" color:white; font-size:20px;" value="Hakimlerimiz" action="Hakimler"/>
+                                                                        </li>
+                                                                    <li class="anasayfabutton"><h:commandLink style="color:white; font-size:20px;font-weight: bold;" value="Anayasalar"   action="Anayasalar"/>
+                                                                        
+                                                                        
+                                                                        </li>
+									
+									<li class="anasayfabutton"><h:commandLink style="color:white; font-size:20px;" value="Hakkımızda" action="Hakkımızda"/>
+                                                                        </li>
+									<li class="anasayfabutton"><h:commandLink style="color:white; font-size:20px;" value="İletişim" action="İletişim"/>
+                                                                        
+                                                                        </li>
+                                                                    <li class="anasayfabutton"><h:commandLink style="color:white; font-size:20px;" value="Giriş" action="GirişSayfası"/>
+                                                                        
+                                                                        </li>
+								
+                                                              
+                                                                </ul>
+							  </h:form></nav>					  </div>
+					</div>
+                                    </div>
+					<div  class="slider-bg">
+                                            
+						<div class="slider">
+							
+<div style="background-color: #ccc" class="genel" >  
+
+    <div class="baslik" > </div>
+    <div class="baslik2" align="center" > <h:outputText style="font-family:monospace; font-size:15px; color:black; " value="sayın  #{hakimGirisDao.selectad()}"/> </div>
+<div  >
+    <h:form  style="font-size: 15px; font-family: verdana;text-align:center;color:#cc3300; padding:15px 0px 15px 15px ">
+
+       DAVALARINIZI GÖRÜNTÜLEMEK İÇİN  <h:commandLink value="TIKLAYINIZ" action="hakimdava1" /><br/>
+       DAVALARINIZA BAKAN AVUKATLARI GÖRMEK İÇİN  <h:commandLink value="TIKLAYINIZ" action="hakimdava1avukat" /><br/>
+       DAVALARINIZIN KANITLARINI GÖRMEK İÇİN  <h:commandLink value="TIKLAYINIZ" action="hakimdava1kanit" /><br/>
+       DAVALI VE DAVACILARI GÖRMEK  İÇİN  <h:commandLink value="TIKLAYINIZ" action="hakimdava1musteri" /><br/>
+       DAVALARINIZIN CELSELERİNİ GÖRMEK İÇİN  <h:commandLink value="TIKLAYINIZ" action="hakimdava1celse" /><br/>
+       CELSELERİNİZİN ŞAHİTLERİNİ GÖRMEK İÇİN  <h:commandLink value="TIKLAYINIZ" action="hakimdava1celse1şahit" /><br/>
+       ŞAHİTLERİN SORU-CEVAPLARINI GÖRMEK İÇİN  <h:commandLink value="TIKLAYINIZ" action="hakimdava1celse1şahit1cevap" /><br/>
+       DAVALARINIZIN HANGİ ADLİYEDE OLDUĞUNU GÖRMEK İÇİN  <h:commandLink value="TIKLAYINIZ" action="hakimdava1mahkeme" /><br/>
+       MAHKEMELERİNİZİ GÖRÜNTÜLEMEK İÇİN <h:commandLink value="TIKLAYINIZ" action="hakim_mahkeme" />
+
+          
+
+      
+
+ </h:form> 
+</div>
+ </div>
+							
+						</div>
+					</div>
+				</div>
+			</header>
+<!--==============================content================================-->
+				<section id="content">
+				<div class="main">
+					<div class="container_12">
+						<div class="wrapper p3">
+							<article class="grid_8">
+								<div class="indent-left">
+									
+									<h3>Hukuk ile ilgili  özlü sözler</h3>
+                                                                        <h4 class="color-3"> Bir ülkede adaletin varlığı kişinin kendini özgürce ifade etmesinden anlaşılır. Bir ülkede adaletsizliğin varlığı ise kişilerin başına buyruk davranışından anlaşılır. İyi insanlar sorunları önlemek için çaba sarf ederler. -Konfüçyüs</h4>
+								</div>
+							</article>
+							<article class="grid_4">
+								<div class="indent-left indent-top">
+									<h4 class="prev-indent-bot2">Merak edilenler</h4>
+									<h:form><ul class="list-1">
+                                                                            <li><h:commandLink  value="Adalet nedir ?"    action="Adaletnedir"/> </li>
+										<li><h:commandLink  value="Hakim nedir ve ne iş yapar ?"    action="HakimNedir"/></li>
+										<li><h:commandLink  value="Anayasa nedir ?"    action="AnayasaNedir"/></li>
+										<li><h:commandLink  value="Avukat nedir ve ne iş yapar ?"    action="AvukatNedir"/></li>
+										
+									</ul></h:form>  
+								</div>
+							</article>
+						</div>
+						
+					</div>
+				</div>
+				<div class="block"></div>
+			</section>
+		</div>
+<!--==============================footer=================================-->
+	<footer>
+        <div class="main">
+          <div class="footer-bg">
+            <div class="aligncenter"> Hazırlayanlar:Ömer Erçelik ve Adem Enes Ulutaş  <br/>
+      Hukuk Sitemize Hoşgeldiniz<br/>
+       İstanbul Üniversitesi/Bilgisayar Mühendisliği </div>
+          </div>
+        </div>
+	</footer>	
+</h:body>
+</html>
